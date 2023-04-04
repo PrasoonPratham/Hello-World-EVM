@@ -1,6 +1,11 @@
-require("@nomicfoundation/hardhat-toolbox");
+require("@nomiclabs/hardhat-ethers");
 
-/** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.18",
+  solidity: "0.8.0",
+  networks: {
+    eclipse: {
+      url: "https://your-rpc-url",
+      accounts: ["0xYourPrivateKey"],
+    },
+  },
 };
